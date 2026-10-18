@@ -1,12 +1,133 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="NOVA Space Planner, a responsive small workspace design concept."><title>NOVA Space Planner</title><link rel="stylesheet" href="style.css"></head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Space Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-<header class="top"><a class="logo" href="#home"><b>N</b> NOVA<span>SPACE</span></a><nav><a href="#planner">Planner</a><a href="#ideas">Ideas</a><a href="#about">About</a></nav><a class="pill" href="#planner">Plan your space ↗</a></header>
-<main>
-<section class="hero" id="home"><div><p class="eyebrow">✳ YOUR SPACE, REIMAGINED</p><h1>A little room.<br><em>A lot of possibility.</em></h1><p class="lead">Create a workspace that feels like you. Explore thoughtful ideas for small spaces, big ideas, and better everyday focus.</p><div class="actions"><a class="primary" href="#planner">Explore the planner ↘</a><a class="plain" href="#ideas">See design ideas →</a></div><div class="proof"><b>✳</b><span><strong>Thoughtful by design</strong><small>Simple choices. Better flow.</small></span></div></div>
-<div class="art"><span class="art-label">SMALL SPACE / BIG ENERGY</span><div class="room"><div class="window"><i></i></div><div class="picture"><i></i><i></i><i></i></div><div class="plant"><i></i><i></i><i></i><b></b></div><div class="desk"><div class="screen"><i></i><i></i><div class="chart"><b></b><b></b><b></b><b></b><b></b></div></div><div class="table"></div><div class="leg l"></div><div class="leg r"></div><div class="mug"></div></div><div class="chair"><i></i><b></b></div><div class="rug"></div></div><div class="float f1"><b>↗</b><span><small>ROOM EFFICIENCY</small><strong>More room to think</strong></span></div><div class="float f2"><b class="swatches"></b><span><small>YOUR PALETTE</small><strong>Olive · Sand · Ink</strong></span></div></div></section>
-<section class="wrap planner" id="planner"><div class="heading"><div><p class="eyebrow">THE MINI PLANNER</p><h2>Start with your essentials.</h2></div><p>Pick a setup to explore practical ideas for your space.</p></div><div class="planner-grid"><div class="choices"><article class="choice active"><span>01</span><b class="ico">▱</b><div><h3>Focus corner</h3><p>A calm desk setup for deep work.</p></div><strong>↗</strong></article><article class="choice"><span>02</span><b class="ico warm">✳</b><div><h3>Creative nook</h3><p>Room for sketches and new ideas.</p></div><strong>↗</strong></article><article class="choice"><span>03</span><b class="ico lilac">◒</b><div><h3>Quiet reading spot</h3><p>Soft light and a slower pace.</p></div><strong>↗</strong></article><small class="note">Concept preview — choices are visual examples.</small></div>
-<div class="preview"><div class="preview-head"><div><small>SUGGESTED LAYOUT</small><h3>Compact studio</h3></div><span>4 × 3 m</span></div><div class="floorplan"><i class="pf-window"></i><i class="pf-desk"><b></b></i><i class="pf-chair"></i><i class="pf-plant"></i><i class="pf-shelf"><b></b><b></b><b></b></i><i class="pf-rug"></i><small class="measure">4.0 m</small></div><div class="stats"><div><small>STYLE</small><b>Warm minimal</b></div><div><small>PRIORITY</small><b>Clear desk space</b></div><div><small>LIGHT</small><b>Natural</b></div></div></div></div></section>
-<section class="ideas" id="ideas"><div class="wrap"><div class="heading"><div><p class="eyebrow">SMALL DETAILS, BIG DIFFERENCE</p><h2>Make every corner count.</h2></div><p>Three simple principles to make a compact workspace feel open and personal.</p></div><div class="idea-grid"><article><div class="visual light"><i class="sun"></i><i class="pot"></i><i class="leaf a"></i><i class="leaf b"></i></div><small>01 / LIGHT</small><h3>Let daylight lead</h3><p>Place your desk near a window when possible and keep the brightest area clear.</p></article><article><div class="visual order"><i class="shelf"></i><i class="book a"></i><i class="book b"></i><i class="book c"></i></div><small>02 / ORDER</small><h3>Give things a home</h3><p>Use vertical storage and a small tray to keep essentials close but clutter out of sight.</p></article><article><div class="visual colors"><i></i><i></i><i></i><i></i></div><small>03 / COLOR</small><h3>Keep a calm palette</h3><p>Pair one grounding shade with warm neutrals, then add one accent you love.</p></article></div></div></section>
-<section class="wrap about" id="about"><div class="stamp">N<sup>✳</sup></div><div><p class="eyebrow">ABOUT NOVA SPACE</p><h2>A front-end concept for more intentional spaces.</h2><p>This fictional workspace planner explores layout, color, and responsive design using HTML and CSS.</p></div><a class="pill pale" href="#home">Back to top ↑</a></section>
-</main><footer><a class="logo" href="#home"><b>N</b> NOVA<span>SPACE</span></a><p>Front-end practice project by Nader Farid.</p><strong>HTML · CSS</strong></footer></body></html>
+
+    <header class="header">
+        <div class="logo">NOVA <span>SPACE</span></div>
+        <nav class="nav-links">
+            <a href="#setups">Setups</a>
+            <a href="#ideas">Principles</a>
+            <a href="#specs">Room Specs</a>
+        </nav>
+        <a href="#setups" class="btn-outline">Explore Setups</a>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-text">
+                <span class="tag">YOUR SPACE, REIMAGINED</span>
+                <h1>A little room. A lot of possibility.</h1>
+                <p>Create a workspace that feels like you. Explore practical layout ideas for compact rooms, clear
+                    desks, and better everyday focus.</p>
+                <div class="hero-btns">
+                    <a href="#setups" class="btn-primary">Explore Setups</a>
+                    <a href="#ideas" class="btn-outline">Design Ideas</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600"
+                    alt="Minimalist Workspace">
+            </div>
+        </section>
+
+        <section id="setups" class="section">
+            <div class="section-header">
+                <h2>Curated Workspace Setups</h2>
+                <p>Pick a layout style suited for compact rooms and studio corners.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <span class="card-num">01</span>
+                    <h3>Focus Corner</h3>
+                    <p>A calm, distraction-free desk setup designed for deep work and coding sessions.</p>
+                    <div class="card-meta">Ideal area: 3 × 2 m</div>
+                </div>
+
+                <div class="card">
+                    <span class="card-num">02</span>
+                    <h3>Creative Nook</h3>
+                    <p>Flexible table space with open shelving for sketches, notebooks, and daily tools.</p>
+                    <div class="card-meta">Ideal area: 4 × 3 m</div>
+                </div>
+
+                <div class="card">
+                    <span class="card-num">03</span>
+                    <h3>Quiet Reading Spot</h3>
+                    <p>Warm lighting and comfortable seating arranged for reading and planning.</p>
+                    <div class="card-meta">Ideal area: 2.5 × 2 m</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ideas" class="section">
+            <div class="section-header">
+                <h2>Three Core Principles</h2>
+                <p>Simple guidelines to make any small workspace feel open and organized.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="idea-box">
+                    <span>01 / LIGHT</span>
+                    <h3>Let Daylight Lead</h3>
+                    <p>Position your main desk near natural window light to reduce eye strain and keep the room bright.
+                    </p>
+                </div>
+
+                <div class="idea-box">
+                    <span>02 / ORDER</span>
+                    <h3>Vertical Storage</h3>
+                    <p>Use wall shelves and small desk trays to keep essential tools within reach and clutter out of
+                        sight.</p>
+                </div>
+
+                <div class="idea-box">
+                    <span>03 / COLOR</span>
+                    <h3>Calm Color Palette</h3>
+                    <p>Combine warm neutral backgrounds with olive and wood tones for a balanced visual environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="section">
+            <div class="banner">
+                <div>
+                    <h2>Standard Compact Studio Layout</h2>
+                    <p>Optimized proportions for a balanced home office setup without crowding the room.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span>DIMENSIONS</span>
+                        <strong>4.0 × 3.0 m</strong>
+                    </div>
+                    <div class="stat-item">
+                        <span>STYLE</span>
+                        <strong>Warm Minimal</strong>
+                    </div>
+                    <div class="stat-item">
+                        <span>PALETTE</span>
+                        <strong>Olive & Sand</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 NOVA Space — Front-End Layout by Nader.</p>
+    </footer>
+
+</body>
+
+</html>
